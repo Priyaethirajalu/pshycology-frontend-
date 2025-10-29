@@ -32,7 +32,7 @@ async function sendText(text){
   chat.appendChild(el)
   chat.scrollTop = chat.scrollHeight
   try{
-    const res = await fetch('http://localhost:8000/chat', {
+      const res = await fetch('https://pshycology-backend-sio5.onrender.com/chat', {
       method: 'POST',
       headers: {'Content-Type':'application/json'},
       body: JSON.stringify({text, session_id: 'demo'})
